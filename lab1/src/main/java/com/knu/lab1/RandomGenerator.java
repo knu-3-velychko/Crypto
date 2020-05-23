@@ -16,8 +16,6 @@ public class RandomGenerator {
         do {
             result = new BigInteger(upperBound.bitLength(), random);
             i++;
-            if (i >= 100)
-                break;
         } while (result.compareTo(lowerBound) <= 0 || result.compareTo(upperBound) >= 0);
         return result;
     }
