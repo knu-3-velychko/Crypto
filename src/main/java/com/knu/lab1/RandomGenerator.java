@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class RandomGenerator {
-    private Random random;
+    private final Random random;
 
     public RandomGenerator(long seed) {
         this.random = new Random(seed);
@@ -12,9 +12,13 @@ public class RandomGenerator {
 
     public BigInteger getBigInteger(BigInteger lowerBound, BigInteger upperBound) {
         BigInteger result;
+        int i = 0;
         do {
             result = new BigInteger(upperBound.bitLength(), random);
-        } while (result.compareTo(upperBound) >= 0 || result.compareTo(lowerBound) <= 0);
+            i++;
+            if (i >= 100)
+                break;
+        } while (result.compareTo(lowerBound) <= 0 || result.compareTo(upperBound) >= 0);
         return result;
     }
 

@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 
 
 public class BinPowTest {
-    private final RandomGenerator generator = new RandomGenerator(System.currentTimeMillis());
-    private final Random random = new Random();
-    private final int length = 1024;
+    private final static RandomGenerator generator = new RandomGenerator(System.currentTimeMillis());
+    private final static Random random = new Random();
+    private final static int length = 1024;
 
     private int pow(int value, int power, int mod) {
         int result = 1;
