@@ -1,17 +1,26 @@
 package com.knu.lab3;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.logging.Logger;
 
 public class ElGamalAlgorithm {
-    public static String encode(String data) {
+    private final HashFunction hashFunction;
+
+    public ElGamalAlgorithm(HashFunction hashFunction) {
+        this.hashFunction = hashFunction;
+    }
+
+    public String encode(String data) {
         byte[] bytes = data.getBytes();
         int[] extendedData = processBytes(bytes);
-        int[] encoded = SHA2.encode(extendedData);
+        int[] encoded = hashFunction.encode(extendedData);
         return Util.intArrayToHexString(encoded);
     }
 
-    public static void encode(String inputPath, String outputPath) throws IOException {
+    public void encode(String inputPath, String outputPath) throws IOException {
         FileReader reader = new FileReader(inputPath);
         BufferedReader bufferedReader = new BufferedReader(reader);
         FileWriter writer = new FileWriter(outputPath);
@@ -21,7 +30,7 @@ public class ElGamalAlgorithm {
                     try {
                         writer.write(encode(line));
                     } catch (IOException exception) {
-                        Logger.getLogger(ElGamalAlgorithm.class.getName()).warning("Exception while writing to file.");
+                        Logger.getLogger(ElGamalAlgorithm.class.getName()).warning(exception.getMessage());
                     }
                 }
 
@@ -30,7 +39,7 @@ public class ElGamalAlgorithm {
         writer.close();
     }
 
-    private static int[] processBytes(byte[] data) {
+    private int[] processBytes(byte[] data) {
         byte[] extendedData = new byte[(data.length + 1 + 8 + 63) / 64 * 64];
         System.arraycopy(data, 0, extendedData, 0, data.length);
         extendedData[data.length] = (byte) 0b10000000;

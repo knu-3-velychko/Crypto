@@ -1,6 +1,6 @@
 package com.knu.lab3;
 
-public class SHA2 {
+public class SHA2 implements HashFunction {
     private static final int loopNumber = 64;
     private static final int chuckSize = 16;
     private static final int[] k = {
@@ -16,7 +16,7 @@ public class SHA2 {
     private static final int[] h = {
             0x6A09E667, 0xBB67AE85, 0x3C6EF372, 0xA54FF53A, 0x510E527F, 0x9B05688C, 0x1F83D9AB, 0x5BE0CD19};
 
-    public static int[] encode(int[] data) {
+    public int[] encode(int[] data) {
         if (data.length % chuckSize != 0) {
             throw new IllegalArgumentException();
         }

@@ -23,8 +23,8 @@ public class Util {
 
     public static String intArrayToHexString(int[] value) {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < value.length; i++) {
-            long longValue = Integer.toUnsignedLong(value[i]);
+        for (int item : value) {
+            long longValue = Integer.toUnsignedLong(item);
             stringBuilder.append(String.format("%08x", longValue));
         }
         return stringBuilder.toString();

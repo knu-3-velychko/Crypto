@@ -2,11 +2,15 @@ package com.knu.lab3;
 
 import org.junit.Test;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class ElGamalAlgorithmTest {
+    private final static ElGamalAlgorithm algorithm = new ElGamalAlgorithm(new SHA2());
 
     @Test
     public void encodeString() {
@@ -14,12 +18,12 @@ public class ElGamalAlgorithmTest {
         String str2 = "Second string to encode one";
 
 
-        String hash1 = ElGamalAlgorithm.encode(str1);
+        String hash1 = algorithm.encode(str1);
         assertEquals(64, hash1.length());
-        assertEquals(hash1, ElGamalAlgorithm.encode(str1));
+        assertEquals(hash1, algorithm.encode(str1));
 
 
-        String hash2 = ElGamalAlgorithm.encode(str2);
+        String hash2 = algorithm.encode(str2);
 
         assertNotEquals(hash1, hash2);
     }
@@ -29,7 +33,7 @@ public class ElGamalAlgorithmTest {
         String inputPath = "input.txt";
         String outputPath = "output.txt";
 
-        ElGamalAlgorithm.encode(inputPath, outputPath);
+        algorithm.encode(inputPath, outputPath);
 
         FileReader readerInput = new FileReader(inputPath);
         FileReader readerOutput = new FileReader(outputPath);
@@ -42,7 +46,7 @@ public class ElGamalAlgorithmTest {
         String encodedLine = bufferedReaderOutput.readLine();
 
         assertEquals(64, encodedLine.length());
-        assertEquals(encodedLine, ElGamalAlgorithm.encode(line));
+        assertEquals(encodedLine, algorithm.encode(line));
 
         readerInput.close();
         readerOutput.close();

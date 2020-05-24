@@ -2,44 +2,46 @@ package com.knu.lab3;
 
 import org.junit.Test;
 
-import java.nio.ByteBuffer;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 public class UtilTest {
 
     @Test
     public void rotateLeft() {
-        assertEquals(40, Util.rotateLeft(10, 2));
+        assertEquals(8, Util.rotateLeft(2, 2));
     }
 
     @Test
     public void rotateRight() {
-        assertEquals(10, Util.rotateRight(40, 2));
+        assertEquals(2, Util.rotateRight(8, 2));
     }
 
     @Test
     public void longToByteArray() {
-        long value = 10;
-        byte[] bytes = {0, 0, 0, 0, 0, 0, 0, 10};
+        long value = 9910;
+        byte[] bytes = {0, 0, 0, 0, 0, 0, 38, -74};
+        for (byte i : Util.longToByteArray(value)) {
+            System.out.println(i);
+        }
         assertArrayEquals(bytes, Util.longToByteArray(value));
     }
 
     @Test
     public void byteArrayToInt() {
-        byte[] bytes = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        assertEquals(16909060, Util.byteArrayToInt(bytes, 0, 4));
+        byte[] bytes = {10, 20, 30, 40, 50, 60, 70, 80};
+        assertEquals(169090600, Util.byteArrayToInt(bytes, 0, 4));
     }
 
     @Test
     public void byteArrayToIntArray() {
-        byte[] bytes = {1, 2, 3, 4};
-        assertArrayEquals(new int[]{16909060}, Util.byteArrayToIntArray(bytes));
+        byte[] bytes = {10, 20, 30, 40};
+        assertArrayEquals(new int[]{169090600}, Util.byteArrayToIntArray(bytes));
     }
 
     @Test
     public void intArrayToHexString() {
-        int[] ints = {1, 2, 3, 4};
-        assertEquals("00000001000000020000000300000004", Util.intArrayToHexString(ints));
+        int[] ints = {10, 20, 30, 40};
+        assertEquals("0000000a000000140000001e00000028", Util.intArrayToHexString(ints));
     }
 }
