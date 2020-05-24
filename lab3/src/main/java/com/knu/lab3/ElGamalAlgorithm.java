@@ -1,6 +1,7 @@
 package com.knu.lab3;
 
 import java.io.*;
+import java.util.logging.Logger;
 
 public class ElGamalAlgorithm {
     public static String encode(String data) {
@@ -19,8 +20,8 @@ public class ElGamalAlgorithm {
                 line -> {
                     try {
                         writer.write(encode(line));
-                    } catch (IOException ignored) {
-                        //FIXME:add logger
+                    } catch (IOException exception) {
+                        Logger.getLogger(ElGamalAlgorithm.class.getName()).warning("Exception while writing to file.");
                     }
                 }
 
