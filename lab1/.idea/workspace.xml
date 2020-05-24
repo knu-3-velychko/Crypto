@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6de142c-a84a-4e8b-af6f-6d67f8be3ab7" name="Default Changelist" comment="" />
+    <list default="true" id="469c17fe-fd30-477b-b85a-86e784e7c8b4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -17,8 +22,152 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1cGIQwi5czk2arg8JHq66azStjR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.knu.lab1" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'org.example.lab1'">
+    <configuration name="ExtendedGCDTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab1.ExtendedGCDTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="KaratsubaMultiplicationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab1.KaratsubaMultiplicationTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MontgomeryMultiplicationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab1.MontgomeryMultiplicationTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MontgomeryMultiplicationTest.pow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab1.MontgomeryMultiplicationTest.pow&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'org.example.lab1'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'org.example.lab1'" />
+        <item itemvalue="Gradle.MontgomeryMultiplicationTest.pow" />
+        <item itemvalue="Gradle.MontgomeryMultiplicationTest" />
+        <item itemvalue="Gradle.ExtendedGCDTest" />
+        <item itemvalue="Gradle.KaratsubaMultiplicationTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
     <queries />
@@ -27,33 +176,69 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="469c17fe-fd30-477b-b85a-86e784e7c8b4" name="Default Changelist" comment="" />
+      <created>1590148490656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590148490656</updated>
+      <workItem from="1590148499126" duration="3776000" />
+      <workItem from="1590155316783" duration="22790000" />
+      <workItem from="1590237204207" duration="2021000" />
+      <workItem from="1590239761729" duration="576000" />
+      <workItem from="1590256055270" duration="1268000" />
+      <workItem from="1590257437031" duration="12810000" />
+      <workItem from="1590277508421" duration="2000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="357" y="194" key="FileChooserDialogImpl" timestamp="1590313273512">
+    <state x="93" y="93" width="1181" height="685" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590180409565">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="357" y="194" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1590313273512" />
-    <state width="641" height="217" key="GridCell.Tab.0.bottom" timestamp="1590313284030">
+    <state x="93" y="93" width="1181" height="685" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1368.872@0.0.1368.872" timestamp="1590180409565" />
+    <state x="490" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1590265649913">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="641" height="217" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590313284030" />
-    <state width="641" height="217" key="GridCell.Tab.0.center" timestamp="1590313284029">
+    <state x="490" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1590265649913" />
+    <state x="137" y="316" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590154446717">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="641" height="217" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590313284029" />
-    <state width="641" height="217" key="GridCell.Tab.0.left" timestamp="1590313284029">
+    <state x="137" y="316" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1590154446717" />
+    <state width="1326" height="217" key="GridCell.Tab.0.bottom" timestamp="1590277451901">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="641" height="217" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590313284029" />
-    <state width="641" height="217" key="GridCell.Tab.0.right" timestamp="1590313284030">
+    <state width="1326" height="217" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590277451901" />
+    <state width="1326" height="217" key="GridCell.Tab.0.center" timestamp="1590277451901">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="641" height="217" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590313284030" />
-    <state x="0" y="54" key="new project wizard" timestamp="1590313281390">
+    <state width="1326" height="217" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590277451901" />
+    <state width="1326" height="217" key="GridCell.Tab.0.left" timestamp="1590277451901">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="0" y="54" key="new project wizard/0.0.1368.872@0.0.1368.872" timestamp="1590313281390" />
+    <state width="1326" height="217" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590277451901" />
+    <state width="1326" height="217" key="GridCell.Tab.0.right" timestamp="1590277451901">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1326" height="217" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590277451901" />
+    <state x="0" y="85" key="SettingsEditor" timestamp="1590155186142">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="0" y="85" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590155186142" />
+    <state x="120" y="276" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590274815440">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="120" y="276" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1590274815440" />
+    <state x="60" y="163" width="575" height="546" key="find.popup" timestamp="1590155698644">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="60" y="163" width="575" height="546" key="find.popup/0.0.1368.872@0.0.1368.872" timestamp="1590155698644" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab1$Tests_in__org_example_lab1_.ic" NAME="Tests in 'org.example.lab1' Coverage Results" MODIFIED="1590277605743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
