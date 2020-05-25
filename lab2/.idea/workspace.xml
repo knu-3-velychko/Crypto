@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cd5aa1-e16c-4fa5-b364-01e9bb57aa76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/RC6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/knu/lab2/UtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/modules/cryptologyElGamal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/modules/cryptologyElGamal.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/modules/cryptologyElGamal.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/RC6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/DES.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +43,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -69,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590363322483</updated>
       <workItem from="1590363328458" duration="974000" />
+      <workItem from="1590435572138" duration="1295000" />
     </task>
     <servers />
   </component>
