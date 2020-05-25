@@ -1,10 +1,9 @@
 package com.knu.lab3;
 
 public class Message {
-    private byte[] a;
-    private byte[] b;
+    private final byte[] a, b;
 
-    public Message(byte[] a, byte[] b){
+    public Message(byte[] a, byte[] b) {
         this.a = a.clone();
         this.b = b.clone();
     }

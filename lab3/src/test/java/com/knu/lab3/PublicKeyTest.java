@@ -23,19 +23,19 @@ public class PublicKeyTest {
 
     @Test
     public void getKeyY() {
-        assertTrue(expectedY1.compareTo(publicKey1.getKeyY()) == 0);
-        assertTrue(expected2.compareTo(publicKey2.getKeyY()) == 0);
+        assertEquals(0, expectedY1.compareTo(publicKey1.getKeyY()));
+        assertEquals(0, expected2.compareTo(publicKey2.getKeyY()));
     }
 
     @Test
     public void getKeyG() {
-        assertTrue(expectedG1.compareTo(publicKey1.getKeyG()) == 0);
-        assertTrue(expected2.compareTo(publicKey2.getKeyG()) == 0);
+        assertEquals(0, expectedG1.compareTo(publicKey1.getKeyG()));
+        assertEquals(0, expected2.compareTo(publicKey2.getKeyG()));
     }
 
     @Test
     public void getKeyP() {
-        assertTrue(expectedP1.compareTo(publicKey1.getKeyP()) == 0);
-        assertTrue(expected2.compareTo(publicKey2.getKeyP()) == 0);
+        assertEquals(0, expectedP1.compareTo(publicKey1.getKeyP()));
+        assertEquals(0, expected2.compareTo(publicKey2.getKeyP()));
     }
 }

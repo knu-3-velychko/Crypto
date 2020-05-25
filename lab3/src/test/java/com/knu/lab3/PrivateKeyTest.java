@@ -15,8 +15,8 @@ public class PrivateKeyTest {
         PrivateKey privateKey1 = new PrivateKey(expected1);
         PrivateKey privateKey2 = new PrivateKey(expected2);
 
-        assertTrue(expected1.compareTo(privateKey1.getKey()) == 0);
-        assertTrue(expected2.compareTo(privateKey2.getKey()) == 0);
+        assertEquals(0, expected1.compareTo(privateKey1.getKey()));
+        assertEquals(0, expected2.compareTo(privateKey2.getKey()));
 
     }
 }

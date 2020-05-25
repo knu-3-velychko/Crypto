@@ -6,15 +6,15 @@ import java.util.Random;
 
 public class Key {
     private static final int CERTAINTY = 90;
-    private PublicKey publicKey;
-    private PrivateKey privateKey;
+    private final PublicKey publicKey;
+    private final PrivateKey privateKey;
 
     public Key(PublicKey publicKey, PrivateKey privateKey) {
         this.publicKey = publicKey;
         this.privateKey = privateKey;
     }
 
-    public static Key generateKey(int keyBitLength) throws Exception {
+    public static Key generateKey(int keyBitLength) {
         Random random = new Random(new Date().getTime());
         BigInteger p = new BigInteger(keyBitLength, CERTAINTY, random);
         BigInteger g = primitiveRootModulo(p);
@@ -24,7 +24,7 @@ public class Key {
         return new Key(new PublicKey(y, g, p), new PrivateKey(x));
     }
 
-    private static BigInteger primitiveRootModulo(BigInteger p) throws Exception {
+    private static BigInteger primitiveRootModulo(BigInteger p) {
         BigInteger eulerFucntionValue = p.subtract(BigInteger.ONE);
         BigInteger i = BigInteger.ZERO;
         while (i.compareTo(eulerFucntionValue) <= 0) {
@@ -34,7 +34,7 @@ public class Key {
             i = i.add(BigInteger.ONE);
         }
 
-        throw new Exception("NOT FOUND");
+        throw new IllegalArgumentException();
     }
 
 

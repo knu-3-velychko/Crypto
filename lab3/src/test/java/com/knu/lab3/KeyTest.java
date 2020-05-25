@@ -64,7 +64,7 @@ public class KeyTest {
                 product = product.multiply(keys[j].getPublicKey().getKeyG());
             }
 
-            assertTrue(product.mod(keys[j].getPublicKey().getKeyP()).compareTo(BigInteger.ONE) == 0);
+            assertEquals(0, product.mod(keys[j].getPublicKey().getKeyP()).compareTo(BigInteger.ONE));
         }
     }
 }

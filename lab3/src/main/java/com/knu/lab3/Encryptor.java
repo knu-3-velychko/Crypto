@@ -6,29 +6,28 @@ import java.util.Date;
 import java.util.Random;
 
 public class Encryptor {
-    private Key key = null;
+    private final Key key;
 
     public Encryptor(Key key) {
         this.key = key;
     }
 
-
     public ArrayList<Message> encryptString(String s) throws Exception {
-        ArrayList<Message> ciphertextMessages = new ArrayList<>();
+        ArrayList<Message> cipherTextMessages = new ArrayList<>();
 
         byte[] byteInput = s.getBytes();
         byte[] byteInputStub = new byte[1];
         for (byte b : byteInput) {
             byteInputStub[0] = b;
-            ciphertextMessages.add(this.encrypt(byteInputStub));
+            cipherTextMessages.add(this.encrypt(byteInputStub));
         }
 
-        return ciphertextMessages;
+        return cipherTextMessages;
     }
 
-    public String decryptString(ArrayList<Message> ciphertextMessages) {
-        StringBuffer stringBuffer = new StringBuffer();
-        for (Message m : ciphertextMessages) {
+    public String decryptString(ArrayList<Message> encodedMessages) {
+        StringBuilder stringBuffer = new StringBuilder();
+        for (Message m : encodedMessages) {
             stringBuffer.append(new String(this.decrypt(m)));
         }
 
@@ -63,16 +62,14 @@ public class Encryptor {
     }
 
     private int generateRandomKByP(BigInteger p) throws Exception {
-        int bitLength = Math.min(32, p.bitLength());
         Random random = new Random(new Date().getTime());
 
-        //guaranteed k > 0 (at least 2), and in range of int size
         if (p.bitLength() > 32) {
             return random.nextInt(Integer.MAX_VALUE - 2) + 2;
         } else {
             int pInt = p.intValue();
             if (pInt < 3) {
-                throw new Exception("LESS THAN 3");
+                throw new IllegalArgumentException("Value less than 3.");
             }
             return Math.abs(random.nextInt(pInt - 3)) + 2;
         }
