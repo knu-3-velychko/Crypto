@@ -1,18 +1,20 @@
 package com.knu.lab2;
 
-import sun.security.util.BitArray;
+import java.util.BitSet;
 
-import static com.knu.lab2.Util.*;
+import static com.knu.lab2.Constants.*;
 
 public class Key {
-    private final BitArray newKey = new BitArray(64);
-    private final BitArray[] keys = new BitArray[16];
+    private final BitSet newKey = new BitSet(64);
+    private final BitSet[] keys = new BitSet[16];
 
     public Key(String keyS) {
         if (keyS.length() != 7)
             throw new IllegalArgumentException("Key has incorrect size");
 
-        BitArray key = new BitArray(56, keyS.getBytes());
+        BitSet key = BitSet.valueOf(keyS.getBytes());
+
+
         for (int i = 0; i < 8; i++) {
             boolean b1 = true;
             for (int j = 0; j < 7; j++) {
@@ -24,7 +26,7 @@ public class Key {
         initSubKeys();
     }
 
-    private void leftShift(BitArray bitArray, int a) {
+    private void leftShift(BitSet bitArray, int a) {
         while (a != 0) {
             a--;
             boolean b = bitArray.get(0);
@@ -37,17 +39,17 @@ public class Key {
 
 
     private void initSubKeys() {
-        BitArray C = new BitArray(28), D = new BitArray(28);
+        BitSet C = new BitSet(28), D = new BitSet(28);
 
         for (int i = 0; i < 28; i++) {
-            C.set(i, newKey.get(replaseTableC[i]));
-            D.set(i, newKey.get(replaseTableD[i]));
+            C.set(i, newKey.get(replaceTableC[i]));
+            D.set(i, newKey.get(replaceTableD[i]));
         }
 
         for (int i = 0; i < 16; i++) {
             leftShift(C, shiftTable[i]);
             leftShift(D, shiftTable[i]);
-            keys[i] = new BitArray(48);
+            keys[i] = new BitSet(48);
             for (int j = 0; j < 48; j++) {
                 if (keyCreateTable[i] < 28)
                     keys[i].set(i, C.get(keyCreateTable[i]));
@@ -58,7 +60,7 @@ public class Key {
 
     }
 
-    public BitArray getKey(int i) {
+    public BitSet getKey(int i) {
         return keys[i];
     }
 }
