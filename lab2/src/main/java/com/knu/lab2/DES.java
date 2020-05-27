@@ -8,7 +8,7 @@ import static com.knu.lab2.Constants.*;
 
 public class DES {
 
-    private BitSet[] splitBlock(BitSet E) {
+    private static BitSet[] splitBlock(BitSet E) {
         BitSet[] blocks = new BitSet[8];
 
         for (int i = 0; i < 8; i++) {
@@ -20,7 +20,7 @@ public class DES {
         return blocks;
     }
 
-    private BitSet extendBlock(BitSet R) {
+    private static BitSet extendBlock(BitSet R) {
         BitSet E = new BitSet(48);
         for (int i = 0; i < 48; i++) {
             E.set(i, R.get(extensionTable[i]));
@@ -28,7 +28,7 @@ public class DES {
         return E;
     }
 
-    private BitSet feistelHelper(BitSet R, BitSet key) {
+    private static BitSet feistelHelper(BitSet R, BitSet key) {
         BitSet result = new BitSet(32);
 
         BitSet extendBlock = extendBlock(R);
@@ -53,7 +53,7 @@ public class DES {
     }
 
 
-    private BitSet feistelEncrypt(BitSet input, Key key) {
+    private static BitSet feistelEncrypt(BitSet input, Key key) {
         BitSet output = new BitSet(64),
                 L = new BitSet(32),
                 R = new BitSet(32),
@@ -79,7 +79,7 @@ public class DES {
         return output;
     }
 
-    private BitSet feistelDecrypt(BitSet b, Key key) {
+    private static BitSet feistelDecrypt(BitSet b, Key key) {
         BitSet output = new BitSet(64),
                 L = new BitSet(32),
                 R = new BitSet(32),
@@ -102,7 +102,7 @@ public class DES {
         return output;
     }
 
-    private BitSet replaceS(BitSet input) {
+    private static BitSet replaceS(BitSet input) {
         BitSet output = new BitSet(input.length());
         for (int i = 0; i < 64; i++) {
             output.set(i, input.get(replaseTable1[i]));
@@ -110,7 +110,7 @@ public class DES {
         return output;
     }
 
-    private BitSet replaceB(BitSet input) {
+    private static BitSet replaceB(BitSet input) {
         BitSet output = new BitSet(input.length());
         for (int i = 0; i < 64; i++) {
             output.set(replaseTable1[i], input.get(i));
@@ -118,7 +118,7 @@ public class DES {
         return output;
     }
 
-    public String encrypt(String input, String keyS, String initStr) {
+    public static String encrypt(String input, String keyS, String initStr) {
         Key key = new Key(keyS);
 
         while (input.length() % 8 != 0)
@@ -145,7 +145,7 @@ public class DES {
         return output;
     }
 
-    public String decrypt(String input, String keyS, String initStr) {
+    public static String decrypt(String input, String keyS, String initStr) {
         if (input.length() % 8 != 0)
             throw new IllegalArgumentException("Input of incorrect size.");
 
@@ -171,7 +171,7 @@ public class DES {
         return result;
     }
 
-    private void initArrays(BitSet L, BitSet R, BitSet input) {
+    private static void initArrays(BitSet L, BitSet R, BitSet input) {
         for (int i = 0; i < 32; i++) {
             L.set(i, input.get(i));
             R.set(i, input.get(i + 32));

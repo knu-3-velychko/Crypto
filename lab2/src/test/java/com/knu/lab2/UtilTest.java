@@ -8,6 +8,7 @@ public class UtilTest {
 
     @Test
     public void toInt() {
-
+        assertEquals(1, Util.toInt(true));
+        assertEquals(0, Util.toInt(false));
     }
 }

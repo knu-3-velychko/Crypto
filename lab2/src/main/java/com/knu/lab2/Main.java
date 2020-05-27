@@ -13,10 +13,9 @@ public class Main {
         new Random().nextBytes(array);
         String vectorInit = new String(array, StandardCharsets.UTF_8);
 
-        DES d = new DES();
-        String p = d.encrypt(str, password, vectorInit);
+        String p = DES.encrypt(str, password, vectorInit);
         System.out.println("Encrypt: " + p);
-        str = d.decrypt(p, password, vectorInit);
+        str = DES.decrypt(p, password, vectorInit);
         System.out.println("Decrypt: " + str);
     }
 }

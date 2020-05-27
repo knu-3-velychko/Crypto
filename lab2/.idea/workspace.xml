@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cd5aa1-e16c-4fa5-b364-01e9bb57aa76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/knu/lab2/DESTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/DES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/DES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Key.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knu/lab2/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/knu/lab2/UtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/knu/lab2/UtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.UtilTest.toInt">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.knu.lab2.Main" />
       <module name="lab2.main" />
@@ -75,8 +70,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DESTest.encryptDecrypt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab2.DESTest.encryptDecrypt&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UtilTest.toInt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.knu.lab2.UtilTest.toInt&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UtilTest.toInt" />
+        <item itemvalue="Gradle.DESTest.encryptDecrypt" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -96,7 +131,7 @@
       <updated>1590363322483</updated>
       <workItem from="1590363328458" duration="974000" />
       <workItem from="1590435572138" duration="3605000" />
-      <workItem from="1590605307871" duration="6674000" />
+      <workItem from="1590605307871" duration="7216000" />
     </task>
     <servers />
   </component>
@@ -108,30 +143,30 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="267" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1590605434248" />
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1590612055569">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom" timestamp="1590612619297">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590612055569" />
-    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1590612055569">
+    <state width="1326" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590612619297" />
+    <state width="1326" height="227" key="GridCell.Tab.0.center" timestamp="1590612619297">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590612055569" />
-    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1590612055569">
+    <state width="1326" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590612619297" />
+    <state width="1326" height="227" key="GridCell.Tab.0.left" timestamp="1590612619297">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590612055569" />
-    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1590612055569">
+    <state width="1326" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590612619297" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right" timestamp="1590612619297">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590612055569" />
+    <state width="1326" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590612619297" />
     <state x="165" y="13" key="SettingsEditor" timestamp="1590607649431">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="165" y="13" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590607649431" />
-    <state x="114" y="213" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590609260541">
+    <state x="114" y="213" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590612121319">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="114" y="213" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1590609260541" />
+    <state x="114" y="213" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1590612121319" />
     <state x="396" y="157" width="575" height="556" key="find.popup" timestamp="1590607720634">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
